@@ -1,0 +1,24 @@
+-----------------------------------------------Sistema ------------------------------------------
+
+	acpi = checar bateria
+	sudo poweroff = apagar
+	date = hora y dia
+	iwconfig wlp3s0 essid NETWORK_NAME key WIRELESS_KEY = cambiar wifi
+
+-------------------------------------Herramientas de sistema-------------------------------------	
+
+	vim = editor de texto vim
+	mkdir = crear directorio
+	df -h = verificar espacio en disco
+	lynx (dirección web) = navegador
+
+--------------------------------------------Montar una USB---------------------------------------
+
+	sudo fdisk -l = ver discos de almacenamiento
+	sudo mkdir /media/usb =  crear directorio usb
+	sudo mount /dev/sdb /media/usb = montar la usb
+	sudo umount /media/usb = desmontar usb
+	cd /media/usb = acceder a USB
+
+
+
