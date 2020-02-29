@@ -1,0 +1,7 @@
+git init				#Inicia el repositorio
+git clone /path/to/repository		#Obtener los datos del repositorio
+git add .				#Agrega los elementos a la sesión actual
+git commit -m "Commit message"	 	#Agrega el archivo en el HEAD local
+git push origin master			#Sube los cambios al servidor
+git remote add origin <ruta al repo>	#Añade el acceso al repositorio en cuestión
+
