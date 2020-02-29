@@ -4,4 +4,7 @@ git add .				#Agrega los elementos a la sesión actual
 git commit -m "Commit message"	 	#Agrega el archivo en el HEAD local
 git push origin master			#Sube los cambios al servidor
 git remote add origin <ruta al repo>	#Añade el acceso al repositorio en cuestión
-
+git checkout -b <nombre nueva rama>	#Creas una nueva rama
+git checkout master			#Volver a master
+git branch -d <nombre nueva rama>	#Eliminar la rama
+git push origin <nombre nueva rama>	#Sube la nueva rama al servidor
