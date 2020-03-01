@@ -8,4 +8,5 @@ git checkout -b <nombre nueva rama>	#Creas una nueva rama
 git checkout master			#Volver a master
 git branch -d <nombre nueva rama>	#Eliminar la rama
 git push origin <nombre nueva rama>	#Sube la nueva rama al servidor
-prueba
+git pull <ruta al repo> <nombre rama>	#Actualiza el repositorio local
+
