@@ -10,3 +10,4 @@ git branch -d <nombre nueva rama>	#Eliminar la rama
 git push origin <nombre nueva rama>	#Sube la nueva rama al servidor
 git pull <ruta al repo> <nombre rama>	#Actualiza el repositorio local
 git merge <ruta nueva>			#Fusiona diferentes rutas
+git diff <rama fuente> <rama objetivo>	#Compara cambios entre las dos ramas
