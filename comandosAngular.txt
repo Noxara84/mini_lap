@@ -1,0 +1,19 @@
+node apiServer
+
+
+cf push
+ng build --prod --output-path docs --base-href /quantos2/
+
+cf buildpacks
+ng add @angular/pwa
+ng add @nestjs/ng-universal
+ng deploy --base-href=home
+ng deploy --base-href=/REPOSITORY/
+ng add angular-cli-ghpages
+sudo npm install -g angular-cli-ghpages
+cf login  https://api.us-south.cf.cloud.ibm.com
+ibmcloud cf push
+ibmcloud target -o aaron.rodsan98@gmail.com -s dev
+ibmcloud target -g Default
+sudo ng serve --host 0.0.0.0 --open --disableHostCheck true --proxy-config proxy.config.json
+
