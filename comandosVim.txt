@@ -1,13 +1,40 @@
 COMANDOS DE VIM
 
-ESC -> Modo NORMAL
-i -> Modo insertar
-:w _______(Nombre archivo) -> Guardar
-:q -> Salir 
-jkhl -> Teclas de movimiento en la pantalla de comandos
-numero -> Modificador de comando
-:! _______(comandos) -> Modo terminal
-y(ank) -> Copiar en VISUAL
-p(aste) -> Pegar en NORMAL
-dd(delete) -> Eliminar toda la linea en NORMAL
+ESC -------------> Modo NORMAL
+:q --------------> Salir 
+numero ----------> Modificador de comando
+:! (comandos) ---> Modo terminal
+y(ank) ----------> Copiar en VISUAL
+p(aste) ---------> Pegar en NORMAL
+
+MOVIMIENTO
+w ---------------> Saltar entre palabras (adelante)
+b ---------------> Saltar entre palabras (detras)
+jkhl ------------> Teclas de movimiento en la pantalla de comandos
+gd --------------> Ir a la definición de una función
+gf --------------> Ir al archivo con la definición de una función
+gf --------------> Ir al archivo con la definición de una función
+ctrl + o --------> Regresa al nivel anterior de la navegación de archivos
+ctrl + i --------> Regresa al nivel posterior de la navegación de archivos
+
+EDICIÓN 
+
+-INSERTAR TEXTO-
+i ---------------> Modo insertar (antes del cursor)
+a ---------------> Modo insertar (después del cursor)
+A ---------------> Modo insertar (final de la línea)
+u(undo) ---------> Deshacer cambio
+ctrl + r(redo) --> Rehacer cambio 
+
+-ELIMINAR TEXTO-
+x ---------------> Eliminar carácter
+dd(delete) ------> Eliminar toda la linea en NORMAL
 dw(delete word) -> Eliminar palabra en NORMAL
+d + $ -----------> Eliminar desde el cursor hasta el final de la linea
+
+ARCHIVO
+:w (Nombre arc) -> Guardar
+:wq -------------> Guardar y salir 
+
+
+
