@@ -1,11 +1,13 @@
 COMANDOS DE VIM
 
+MODOS
+
 ESC -------------> Modo NORMAL
+v ---------------> Modo VISUAL
+
 :q --------------> Salir 
 numero ----------> Modificador de comando
 :! (comandos) ---> Modo terminal
-y(ank) ----------> Copiar en VISUAL
-p(aste) ---------> Pegar en NORMAL
 
 MOVIMIENTO
 w ---------------> Saltar entre palabras (adelante)
@@ -16,6 +18,16 @@ gf --------------> Ir al archivo con la definición de una función
 gf --------------> Ir al archivo con la definición de una función
 ctrl + o --------> Regresa al nivel anterior de la navegación de archivos
 ctrl + i --------> Regresa al nivel posterior de la navegación de archivos
+gg --------------> Ir al inicio del archivo
+G ---------------> Ir al final del archivo
+# + G -----------> Va a la línea especificada por el #
+/ ---------------> Iniciar busqueda del cursor en adelante
+? ---------------> Inicia la busqueda en todo el archivo
+   n ------------> Avanza a la siguiente coincidencia
+   N ------------> Regresa a la coincidencia anterior 
+% ---------------> Movimiento entre parentesis o corchetes
+0 ---------------> Ir al inició de la línea
+$ ---------------> Ir al final de la línea
 
 EDICIÓN 
 
@@ -25,16 +37,51 @@ a ---------------> Modo insertar (después del cursor)
 A ---------------> Modo insertar (final de la línea)
 u(undo) ---------> Deshacer cambio
 ctrl + r(redo) --> Rehacer cambio 
+p(aste) ---------> Pegar en NORMAL (Abajo)
+P(aste) ---------> Pegar en NORMAL (Arriba)
+r + char --------> Remplazar un carácter
+cw --------------> Cambiar palabra (Change word)
+ciw -------------> Cambiar la palabra sin importar el lugar del cursor
+:s/cad_o/cad_n --> Modificar los caracteres de cad_o por cad_n
+:s/cad_o/cad_n/g > Modificar todas las ocurrencias de una línea 
+:%s/cad/cad/gs --> Modificar todas las ocurrencias del documento con g sustituye y con gs pregunta
+o ---------------> Insertar una nueva línea en modo INSERT (abajo)
+O ---------------> Insertar una nueva línea en modo INSERT (encima)
+R ---------------> Iniciar modo REPLACE
 
 -ELIMINAR TEXTO-
 x ---------------> Eliminar carácter
 dd(delete) ------> Eliminar toda la linea en NORMAL
 dw(delete word) -> Eliminar palabra en NORMAL
-d + $ -----------> Eliminar desde el cursor hasta el final de la linea
+d$ --------------> Eliminar desde el cursor hasta el final de la linea
+d + Mov ---------> Eliminar con dirección particular
+
 
 ARCHIVO
 :w (Nombre arc) -> Guardar
 :wq -------------> Guardar y salir 
 
+EXTRAS
+# ---------------> Se puede modificar la cantidad de veces que se ejecuta una función
+
+VISUAL
+y(ank) ----------> Copiar en VISUAL
+En este modo el movimiento es normal
+
+CONFIGURACIÓN
+Instalador de paquetes
+ 
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+:PlugInstall ----> Instala los paquetes del .vimrc
+
+EASYMOTION
+space + s -------> Ingresas caracteres y te mueves
+
+NERDTREE
+space + nt ------> Abrir nerdTree
+m ---------------> Menu
+s ---------------> Sobre el menú de navegación abre la pestaña del lado izquierdo
 
 
