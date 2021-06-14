@@ -12,6 +12,12 @@ set relativenumber
 set laststatus=2
 set bg=dark	
 set bg=dark	
+set tabstop=2 
+set expandtab  
+set shiftwidth=2
+set autoindent  
+set smartindent  
+setlocal spell spelllang=es
 
 call plug#begin('~/.vim/plugged')
 
@@ -36,6 +42,11 @@ nmap <Leader>s <Plug>(easymotion-s2)
 nmap <Leader>nt :NERDTreeFind<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
-nmap <Leader>gt a>
-nmap <Leader>lt a<
+nmap <Leader>br o<br><Esc>
+nmap <Leader>tg a<><Esc>i
+nmap <Leader>c :!
+nmap <Leader>cht a</<C-x><C-o><Esc>
+nmap <Leader>tt i<C-t><Esc>
 
+" HTML
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
