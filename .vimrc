@@ -19,6 +19,8 @@ set autoindent
 set smartindent  
 setlocal spell spelllang=es
 
+set noshowmode
+
 call plug#begin('~/.vim/plugged')
 
 " Themes 
@@ -28,6 +30,9 @@ Plug 'morhetz/gruvbox'
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'itchyny/lightline.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 
@@ -47,6 +52,24 @@ nmap <Leader>tg a<><Esc>i
 nmap <Leader>c :!
 nmap <Leader>cht a</<C-x><C-o><Esc>
 nmap <Leader>tt i<C-t><Esc>
+nmap :setlocal spell spelllang=es_es<cr> 
+nmap :setlocal spell spelllang=en_en<cr>
 
 " HTML
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+"autocmd FileType python let b:coc_suggest_disable = 1
+"autocmd FileType javascript let b:coc_suggest_disable = 1
+autocmd FileType scss setl iskeyword+=@-@
+
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+if $filetype == "javascript" || &filetype == "python"
+  inoremap <c-space> <C-x><C-u>
+else
+  inoremap <silent><expr> <c-space> coc#refresh()
+endif
+
+let g:user_emmet_leader_key=","

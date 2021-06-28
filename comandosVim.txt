@@ -84,4 +84,9 @@ space + nt ------> Abrir nerdTree
 m ---------------> Menu
 s ---------------> Sobre el menú de navegación abre la pestaña del lado izquierdo
 
-
+COC y TAB
+ctrl + t --------> Identa la linea de texto
+ctrl + d --------> Des-Identa la linea de texto
+ctrl + p --------> Siguiente palabra en la sugerencia
+ctrl + n --------> Palabra anterior en la sugerencia
+CocInstall coc-json coc-tsserver
