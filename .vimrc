@@ -33,6 +33,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'itchyny/lightline.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mattn/emmet-vim'
+Plug 'codota/tabnite-vim' 
 
 call plug#end()
 
@@ -73,3 +74,8 @@ else
 endif
 
 let g:user_emmet_leader_key=","
+
+" Comandos en modo insert de prueba "
+
+inoremap UU <
+inoremap II >
