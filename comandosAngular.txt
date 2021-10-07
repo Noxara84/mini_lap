@@ -16,4 +16,4 @@ ibmcloud cf push
 ibmcloud target -o aaron.rodsan98@gmail.com -s dev
 ibmcloud target -g Default
 sudo ng serve --host 0.0.0.0 --open --disableHostCheck true --proxy-config proxy.config.json
-
+prueba
