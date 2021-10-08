@@ -18,5 +18,5 @@ git reset --hard origin/master		#Regresa todo el fichero a su estado natura
 ---------------------------------------------------------------------------------------------------
 add . ->  commit  -> push 
 
-cambios
+cambios 3
 
